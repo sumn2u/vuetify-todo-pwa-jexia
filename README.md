@@ -2,12 +2,15 @@
 # vuetify-todo-pwa-jexia-jexia
 This project is a simple Todo [PWA] (Progressive Web App) inspired by [TodoMVC]. Perfect to learn the basics about [Vue.js], [Vuex] and [Vuetify] technologies and uses [Jexia] to build serverless application.
 
+Note: This project is forked from [vuetify-todo-pwa]
+
 [PWA]: https://developers.google.com/web/progressive-web-apps
 [TodoMVC]: http://todomvc.com
 [Vue.js]: https://vuejs.org
 [Vuex]: https://vuex.vuejs.org
 [Vuetify]: https://vuetifyjs.com
 [Jexia]: https://www.jexia.com/
+[vuetify-todo-pwa]: https://github.com/davidgaroro/vuetify-todo-pwa
 
 <p align="center">
   <a href="https://sumn2u.github.io/vuetify-todo-pwa-jexia" target="_blank" rel="noopener">
