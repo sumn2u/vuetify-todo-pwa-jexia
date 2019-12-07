@@ -10,7 +10,7 @@
 
 <style lang="stylus" scope>
 #app
-  background: #f5f5f5
+  background: #fafafa
 
 #container
   max-width: 550px

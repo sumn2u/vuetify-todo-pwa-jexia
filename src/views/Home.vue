@@ -157,7 +157,7 @@ export default {
 
 <style lang="stylus">
 h1
-  opacity: 0.3
+  opacity: 1
 .v-text-field .v-input__slot
   padding: 0 !important
 </style>

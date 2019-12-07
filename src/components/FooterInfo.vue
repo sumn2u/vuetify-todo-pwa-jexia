@@ -9,7 +9,7 @@
 <style lang="stylus">
 footer
   margin: 65px auto 0
-  color: #bfbfbf
+  color: #5a5a5a
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5)
   p
     line-height: 1
