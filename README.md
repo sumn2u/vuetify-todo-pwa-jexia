@@ -21,7 +21,6 @@ Note: This project is forked from [vuetify-todo-pwa]
 
 <p align="center">
     <img src="public/img/pwa.png">
-    Live Demo
 </p>
 
 ## Features
