@@ -6,6 +6,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="canonical" href="<%= BASE_URL %>" />
     <title>vuetify-todo-pwa-jexia</title>
     <meta name="description" content="A todo application built with Vuetify">
   </head>
@@ -15,5 +16,10 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <script>
+      if (navigator.serviceWorker) {
+      navigator.serviceWorker.register('/vuetify-todo-pwa-jexia/sw.js', {scope: '/vuetify-todo-pwa-jexia/'})
+      }
+    </script>
   </body>
 </html>

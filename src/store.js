@@ -38,7 +38,13 @@ const actions = {
       const todo = await addTodo(text)
       commit('addTodo', todo[0])
     } catch (exception) {
-      console.error(exception)
+      if (!exception.status) {
+        commit('addTodo', {
+          uid: Date.now(),
+          text,
+          done: false
+        })
+      }
     }
   },
   removeTodo: async ({ commit }, todo) => {
@@ -46,7 +52,9 @@ const actions = {
       const deletedTodo = await deleteTodo(todo.id)
       commit('removeTodo', deletedTodo[0])
     } catch (exception) {
-      console.error(exception)
+      if (!exception.status) {
+        commit('removeTodo', todo)
+      }
     }
   },
   toggleTodo: async ({ commit }, todo) => {
@@ -56,7 +64,12 @@ const actions = {
         todo: updatedTodo[0]
       })
     } catch (exception) {
-      console.error(exception)
+      if (!exception.status) {
+        todo.done = !todo.done
+        commit('editTodo', {
+          todo
+        })
+      }
     }
   },
   editTodo: async ({ commit }, { todo, value }) => {
@@ -66,7 +79,12 @@ const actions = {
         todo: updatedTodo[0]
       })
     } catch (exception) {
-      console.error(exception)
+      if (!exception.status) {
+        todo.text = value
+        commit('editTodo', {
+          todo
+        })
+      }
     }
   },
   toggleAll: async ({ state, commit }, done) => {
@@ -83,7 +101,14 @@ const actions = {
         })
       })
     } catch (exception) {
-      console.error(exception)
+      if (!exception.status) {
+        state.todos.forEach((todo) => {
+          todo.done = done
+          commit('editTodo', {
+            todo
+          })
+        })
+      }
     }
   },
   clearCompleted: async ({ state, commit }) => {
@@ -94,7 +119,12 @@ const actions = {
         commit('removeTodo', todo)
       })
     } catch (exception) {
-      console.error(exception)
+      if (!exception.status) {
+        state.todos.filter(todo => todo.done)
+          .forEach(todo => {
+            commit('removeTodo', todo)
+          })
+      }
     }
   },
   fetchTodos: async ({ commit }) => {
