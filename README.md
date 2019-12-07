@@ -9,6 +9,17 @@ This project is a simple Todo [PWA] (Progressive Web App) inspired by [TodoMVC].
 [Vuetify]: https://vuetifyjs.com
 [Jexia]: https://www.jexia.com/
 
+<p align="center">
+  <a href="https://sumn2u.github.io/vuetify-todo-pwa-jexia" target="_blank" rel="noopener">
+    <img src="public/img/todo.png">
+    Live Demo
+  </a>
+</p>
+
+<p align="center">
+    <img src="public/img/pwa.png">
+    Live Demo
+</p>
 
 ## Features
  - Vue CLI 3 + Webpack + vue-loader for single file Vue components
