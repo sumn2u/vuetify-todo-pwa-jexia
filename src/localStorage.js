@@ -1,5 +1,5 @@
-const LocalStorageService = (function () {
-  var _service
+const LocalStorageService = (() => {
+  let _service
 
   function _getService () {
     if (!_service) {
