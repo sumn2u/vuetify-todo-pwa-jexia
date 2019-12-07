@@ -71,7 +71,7 @@ This project is a simple Todo [PWA] (Progressive Web App) inspired by [TodoMVC].
 ## Installation & Setup
 ### Clone repository
 ```
-git clone https://github.com/davidgaroro/vuetify-todo-pwa-jexia.git
+git clone https://github.com/sumn2u/vuetify-todo-pwa-jexia.git
 cd vuetify-todo-pwa-jexia
 ```
 
