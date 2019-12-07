@@ -1,5 +1,5 @@
 
-# vuetify-todo-pwa-jexia-jexia
+# vuetify-todo-pwa-jexia
 This project is a simple Todo [PWA] (Progressive Web App) inspired by [TodoMVC]. Perfect to learn the basics about [Vue.js], [Vuex] and [Vuetify] technologies and uses [Jexia] to build serverless application.
 
 Note: This project is forked from [vuetify-todo-pwa]
